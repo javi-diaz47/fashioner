@@ -4,10 +4,7 @@
     // height: 70vh;
     // width: 80vw;
     // height: 80vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:unset;
-    position: absolute;
+   position: absolute;
     // margin: 2rem;
     // top: 10rem;
     // right: 10rem;
@@ -18,12 +15,33 @@
     right: 7vw;
     bottom: 7vw;
 
+    .overlay {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: calc(100% + 10px);
+        left: -10px;
+        bottom: 0;
+        background-color: variables.$bg;
+        border-radius: 20px;
+    }
+
+    .hero-image {
+
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:unset;
+    }
+
     .hero-details {
         position: absolute;
         left: -4.5rem;
         bottom: 15%;
         transform: translate(-50, -50);
         height: 50%;
+        z-index: 2;
     }
 
     h2 {

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef} from 'react'
 import { slider } from '../../Utils/variables';
 import { Hero } from '../Hero';
+import gsap from 'gsap'
 
 
 function Slider() {
@@ -25,9 +26,40 @@ function Slider() {
 
   }
 
+  const tl = gsap.timeline();
+
+
   useEffect(() => {
 
     setCurrentSlide(slider[slideIndex]);
+    
+    tl.to('.overlay', {
+        visibility: 'visible',
+        right: -10,
+        bottom: 0,
+        duration: 1,
+    })
+    .to('.overlay', {
+        left: '110%',
+        duration: 1,
+    })
+    .to('.hero-image', {
+        backgroundImage: `url(${slider[slideIndex].img})`,
+        backgroundColor: slider[slideIndex].color,
+        duration: 0,
+        delay: -1
+    })
+    .to('.overlay', {
+        visibility: 'hidden',
+        left: -100,
+        right: '110%',
+        duration: 0
+    })
+    // .to('.hero-image', {
+    //     // backgroundImage: currentSlide.img,
+    //     backgroundColor: currentSlide.color
+    // })
+ 
 
   }, [slideIndex]);
 
@@ -35,7 +67,7 @@ function Slider() {
     return ( 
 
         <div className="slider">
-            
+            <div className="box"></div>
             <Hero 
                 slide={currentSlide} 
             />

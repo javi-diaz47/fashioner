@@ -7,13 +7,15 @@ function Hero({slide}) {
     const { img, color, title, details} = slide;
 
     return ( 
-        <div 
-            className="hero"
-            style={{
-                backgroundImage: `url(${img})`,
-                backgroundColor: color
-            }}
-        >
+        <div className="hero">
+            <div className="overlay"></div>
+            <div 
+                className="hero-image"
+                style={{
+                    // backgroundImage: `url(${img})`,
+                    // backgroundColor: color
+                }}
+            ></div>
             <div className="hero-details">
                 <h2 className="hero-title">
                     {title}

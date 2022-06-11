@@ -61,5 +61,15 @@ code {
 
 }
 
+.box {
+  height: 100%;
+  background: variables.$brown;
+  border: 0;
+  position: absolute;
+  left: -14vw;
+  top: 0;
+  right: 100%;
+}
+
 
 

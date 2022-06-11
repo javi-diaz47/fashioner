@@ -3,7 +3,6 @@ import Brown from '../assets/brown.png'
 import Violet from '../assets/violet.png'
 
 
-
 export const slider = [
     {
       img: Aqua,
