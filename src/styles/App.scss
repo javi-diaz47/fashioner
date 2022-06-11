@@ -22,3 +22,44 @@ code {
   min-height: 100vh;
   position: relative;
 }
+
+.slider-btns{
+  position: absolute;
+  width: 14rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+
+
+  .slide-btn {
+    width: 1rem;
+    height: 10vh;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      position: absolute;
+      transform: translate(-50%, -50%);
+      width: .2rem;
+      height: 10vh;
+      background-color: variables.$slide-inactive-color;
+    }
+
+  }
+  .slide-active-btn:after{
+    // background-color: blue !important;
+    background-color: variables.$slide-active-color;
+  }
+
+}
+
+
+
