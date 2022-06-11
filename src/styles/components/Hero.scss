@@ -1,0 +1,68 @@
+@use '../variables';
+
+.hero {
+    // height: 70vh;
+    // width: 80vw;
+    // height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:unset;
+    position: absolute;
+    // margin: 2rem;
+    // top: 10rem;
+    // right: 10rem;
+    // left: 20rem;
+    // bottom: 10rem;
+    top: 7vw;
+    left: 14vw;
+    right: 7vw;
+    bottom: 7vw;
+
+    .hero-details {
+        position: absolute;
+        left: -4.5rem;
+        bottom: 15%;
+        transform: translate(-50, -50);
+        height: 50%;
+    }
+
+    h2 {
+        font-family: "libre-bodoni";
+        font-size: 14rem;
+        font-weight: 100;
+        margin: 0 0 1rem 0;
+        color: variables.$title-color;
+    }
+
+    p {
+        font-family: sans-serif;
+        font-size: 1.6rem;
+        font-weight: lighter;
+        margin: .2rem;
+    }
+
+    .more-details {
+        position: absolute;
+        
+        left: -4.5rem;
+        bottom: 5%;
+
+        a {
+            text-decoration: none;
+            text-decoration: none;
+            letter-spacing: .8rem;
+            text-transform: uppercase;
+            font-size: 2rem;
+            color: black;
+        }
+
+        img {
+            width: 64px;
+            margin-left: 1rem;
+        }
+
+
+    }
+
+
+}

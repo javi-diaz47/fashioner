@@ -1,0 +1,21 @@
+$bg: #F0F4F8;
+$white: #FFF;
+$black: #1A1A1B;
+$title-color: #1C1C1C;
+$slides-color: #2E3133;
+$blue: #8D9FA9;
+$brown: #C39D8B;
+$gray: #B0B2B6;
+
+@font-face {
+    font-family: "libre-bodoni";
+    src: url("../assets/fonts/LibreBodoni-Regular.woff");
+}
+
+ @font-face {
+    font-family: 'libre-bodoni';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Libre Bodoni Regular'), url('../assets/fonts/LibreBodoni-Regular.woff') format('woff');
+}
+    

@@ -1,0 +1,30 @@
+@use '../variables.scss';
+
+.header {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 7vw;
+
+    figure {
+        margin: 0;
+        display: grid;
+        place-items: center;
+    }
+
+    img {
+        height: 100%;
+    }
+
+    .logo {
+        width: 14vw;
+    }
+
+    .burger-btn {
+        width: 7vw;
+        max-height: 2rem;
+    }
+
+}
