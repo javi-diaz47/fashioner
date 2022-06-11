@@ -3,6 +3,7 @@
 @use 'components/Header';
 
 body {
+  overflow: hidden;
   background-color: variables.$bg;
   margin: 0;
   font-family: poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

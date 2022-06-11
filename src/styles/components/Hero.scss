@@ -14,6 +14,7 @@
     left: 14vw;
     right: 7vw;
     bottom: 7vw;
+    color: variables.$title-color;
 
     .overlay {
         content: '';
@@ -36,26 +37,30 @@
     }
 
     .hero-details {
-        position: absolute;
+        position: relative;
         left: -4.5rem;
-        bottom: 15%;
-        transform: translate(-50, -50);
+        bottom: 75%;
         height: 50%;
         z-index: 2;
     }
 
+    
     h2 {
         font-family: "libre-bodoni";
         font-size: 14rem;
         font-weight: 100;
         margin: 0 0 1rem 0;
-        color: variables.$title-color;
+        letter-spacing: .4rem;
+        // position: relative;
+        // left: 0;
+        mix-blend-mode: difference;
     }
 
     p {
         font-family: sans-serif;
         font-size: 1.6rem;
         font-weight: lighter;
+        mix-blend-mode: difference;
         margin: .2rem;
     }
 
@@ -76,6 +81,10 @@
 
         img {
             width: 64px;
+            position: absolute;
+            top: 50%;
+            right: -80px;
+            transform: translateY(-50%);
             margin-left: 1rem;
         }
 

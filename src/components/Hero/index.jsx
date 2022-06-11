@@ -20,17 +20,21 @@ function Hero({slide}) {
                 <h2 className="hero-title">
                     {title}
                 </h2>
-                {
-                    details.map((detail, i) => (
-                        <p key={i}>
-                            {detail}
-                        </p>
-                    ))
-                }
-            </div>
+                <div className="hero-detail">
+                    {
+                        details.map((detail, i) => (
+                            <p 
+                                key={i}
+                            >
+                                {detail}
+                            </p>
+                        ))
+                    }    
+                </div>
+           </div>
             <div className="more-details">
                 <Link to="/aqua">More</Link>
-                <img src={rightArrow} />
+                <img className="right-arrow" src={rightArrow} />
             </div>
         </div>
     );
