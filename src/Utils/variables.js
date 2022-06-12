@@ -1,6 +1,6 @@
-import Aqua from '../assets/aqua.png';
-import Brown from '../assets/brown.png'
-import Violet from '../assets/violet.png'
+import Aqua from '../assets/aqua.webp';
+import Brown from '../assets/brown.webp'
+import Violet from '../assets/violet.webp'
 
 
 export const slider = [
